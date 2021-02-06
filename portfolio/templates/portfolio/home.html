@@ -1,0 +1,8 @@
+<h1>HomePage</h1>
+{% for item in projects %}
+{{item.title}}<br/>
+{{item.description}}<br/>
+<a href="{{item.url}}">Link</a><br/>
+<img src="{{item.image.url}}" height="50" width="50"><br/>
+
+{% endfor%}
