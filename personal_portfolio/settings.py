@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'cx^9k572%f1_ta3+$b^=je_*yn7q^qz25y&y$k^h$!e8ly+6eh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pythoneering.pythonanywhere.com']
 
 
 # Application definition
@@ -120,5 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT =  BASE_DIR / 'static'
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT =  BASE_DIR / 'media'
