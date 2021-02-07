@@ -1,0 +1,8 @@
+<h1>Blog HomePage</h1>
+{% for item in blogs %}
+{{item.title}}<br/>
+{{item.body}}<br/>
+{{item.date}}<br/>
+<img src="{{item.image.url}}" height="50" width="50"><br/>
+
+{% endfor%}
