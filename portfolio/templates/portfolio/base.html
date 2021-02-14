@@ -9,24 +9,21 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
   <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
-
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-
   <link rel="icon" type="image/png" href="{% static "portfolio/logo.png" %}">
-
+  <link rel="stylesheet" href="{% static "portfolio/stylesheet.css" %}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Charmonman&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
   <title>Portfolio Saurabh™</title>
 </head>
 
 <body>
 
   <nav id="topNav" class="navbar navbar-expand-md navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="{% url 'home' %}">
-        <img src="{% static "portfolio/logo.png" %}" width="30" height="30" class="d-inline-block align-top">
-        <span>Saurabh Awasthi</span>
-      </a>
+    <div class="containerx"> 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -48,9 +45,10 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+
+  
     {% block content %}{% endblock %}
-  </div>
+  
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

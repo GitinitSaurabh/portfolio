@@ -4,35 +4,47 @@
 
 {% block content %}
 
-<div class="row justify-content-center my-3">
-  <div class="col-5">
-    <img src="{% static 'portfolio/profilephoto.jpg' %}" class="img-fluid">
-  </div>
-</div>
+  <div class="profilePic">
+    <img class="profilePicture" src="{% static 'portfolio/profilephoto.png' %}">
+    
 
-<div class="row justify-content-center mb-3">
-  <div class="col-md-9 text-center">
-    <h1 id="hometext" class="font-weight-bold">Saurabh is Programmer Analyst at Cognizant and lives in India</h1>
+
+  </div>
+
+
+<div class="intro">
+  <div class="introSub">
+    <img class="firstCloud"src="{% static 'portfolio/cloud.png' %}">
+    <h1 class="introText">Hey! I am Saurabh </h1>
+    <p class="introText2">A Programmer</p>
+    <img class="imgGlobe" src="{% static 'portfolio/intro.png' %}">
+    <img class="secondCloud" src="{% static 'portfolio/cloud.png' %}">
+    <img class="theMountain"src="{% static 'portfolio/mountain.png'%}">
   </div>
 </div>
 
 <h2 class="mt-5">Portfolio</h2>
 <hr>
-<div class="row">
+<div class="portfolioObjects">
   {% for project in projects %}
-  <div class="col-lg-4 col-md-6">
+  <div class="object">
 
     {% if project.url %}
-    <a href="{{ project.url }}">
-      <img src="{{ project.image.url }}" class="img-fluid mb-2">
-    </a>
+    <div class="noImgUrl"><a  class="theImg" href="{{ project.url }}">
+      <img class="theImg" src="{{ project.image.url }}">
+    </a></div>
+    
     {% else %}
-
-    <img src="{{ project.image.url }}" class="img-fluid mb-2">
+    <div class="imgUrl">
+      <img class="theImg" src="{{ project.image.url }}">
+    </div>
+    
     {% endif %}
-    <h3>{{ project.title }}</h3>
-    <p>{{ project.description }}</p>
-
+    
+    <h3 class="objectTitle">{{ project.title }}</h3>
+    
+    <p class="objectDesc">{{ project.description }}</p>
+   
   </div>
   {% endfor %}
 </div>

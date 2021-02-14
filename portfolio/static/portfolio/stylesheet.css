@@ -1,0 +1,99 @@
+.container{
+   width: 100%;
+}
+body{    
+    background-color: #d3f1e5;
+    font-family: Arial,sans-serif;
+    margin: 0 20px 0 20px;
+}
+.introSub{
+    position:relative;
+}
+.firstCloud{
+    position: relative;
+    left:27rem
+}
+.secondCloud{
+    position: absolute; 
+    top:15rem;
+    left:6rem;
+    height: 4rem;
+}
+.intro{
+    width:inherit;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.introText{
+    text-align: center;
+    font-family: 'Charmonman';
+    font-size: 6em;
+    font-weight: bolder;
+    color: #66BFBF;
+}
+.introText2{
+    font-family: 'Roboto Condensed';
+    text-align: center;
+    font-size: 4em;
+    color: #11999E;
+    font-weight: bold;
+
+}
+.profilePicture{
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    
+}
+.profilePic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgGlobe{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left:250px;
+    bottom: 180px;
+    z-index: -1;    
+    
+    
+}
+.portfolioObjects
+{
+    font-family: 'Montserrat', sans-serif;
+    color: #036468;
+    
+
+}
+.objectTitle{
+    font-weight: 700;
+    text-align: center;
+}
+.objectImg{
+    height: 250px;
+    width: inherit;
+}
+.objectDesc{
+    text-align: center;
+    width: fit-content auto;          
+}
+.object{
+    width: 33%;  
+    display: inline-block;
+    align-items: center;
+    justify-content: center;     
+    
+}
+
+.theImg{
+    height: 250px;
+    width: inherit;
+    display: block;    
+    margin: 0 auto;
+    
+}
