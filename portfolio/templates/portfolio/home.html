@@ -3,7 +3,7 @@
 {% load static %}
 
 {% block content %}
-
+<div class="introSection">
   <div class="profilePic">
     <img class="profilePicture" src="{% static 'portfolio/profilephoto.png' %}">
     
@@ -14,14 +14,18 @@
 
 <div class="intro">
   <div class="introSub">
+    
     <img class="firstCloud"src="{% static 'portfolio/cloud.png' %}">
     <h1 class="introText">Hey! I am Saurabh </h1>
     <p class="introText2">A Programmer</p>
     <img class="imgGlobe" src="{% static 'portfolio/intro.png' %}">
     <img class="secondCloud" src="{% static 'portfolio/cloud.png' %}">
+    <img class="thirdCloud"src="{% static 'portfolio/cloudstyle.png' %}">
     <img class="theMountain"src="{% static 'portfolio/mountain.png'%}">
   </div>
 </div>
+</div>
+
 
 <h2 class="mt-5">Portfolio</h2>
 <hr>
@@ -30,18 +34,19 @@
   <div class="object">
 
     {% if project.url %}
-    <div class="noImgUrl"><a  class="theImg" href="{{ project.url }}">
+   <a  href="{{ project.url }}">
       <img class="theImg" src="{{ project.image.url }}">
-    </a></div>
+    </a>
     
     {% else %}
-    <div class="imgUrl">
+    
       <img class="theImg" src="{{ project.image.url }}">
-    </div>
+    
     
     {% endif %}
-    
+     <a  href="{{ project.url }}">
     <h3 class="objectTitle">{{ project.title }}</h3>
+    </a>
     
     <p class="objectDesc">{{ project.description }}</p>
    
