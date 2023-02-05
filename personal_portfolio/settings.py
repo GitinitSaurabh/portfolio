@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'cx^9k572%f1_ta3+$b^=je_*yn7q^qz25y&y$k^h$!e8ly+6eh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['pythoneering.pythonanywhere.com','127.0.0.1']
 
